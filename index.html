@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      background-color: rgba(217, 217, 217, 1);
+      padding: 5px 15px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #lg1 {
+      height: 50px; /* ajuste o tamanho conforme quiser */
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 40px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    body {
+        background-color: rgba(156, 156, 156, 1);
+    }
+    h1{
+        color:white;
+    }
+    #queb {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    #nmn{
+        margin-top:40px;
+        margin-left: 100px;
+    }
+    #crash{
+        height: 250px;
+        margin-left: 450px;
+        margin-top: -800px;
+    }
+    #aj{
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+    #qs1{
+        margin-top: -600px;
+        margin-left: 1250px;
+    }
+    #lg2 {
+        height: 300px;
+        margin-top: 0px;
+        margin-left: 1230px;
+    }
+    h2{
+        color: white;
+    }
+    #qs1txt{
+        margin-left: 1200px;
+    }
+    .ret1 {
+        width: 600px;     /* Largura */
+        height: 300px;    /* Altura */
+        background-color: rgba(71, 199, 86, 1);  /* Cor de fundo */
+        margin-top: 50px;
+        margin-left:100px;
+        border-radius: 20px;
+    }
+    #zap{
+        margin-top: 50px;
+        height: 200px;
+    }
+    .msgform{
+        padding: 20px;
+        font-size: 20px;
+        margin-top: -140px;
+        margin-left: 220px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    #line1{
+
+        width: 500px;               /* Largura da linha */
+      height: 2px;            /* Altura da linha */
+      color: rgb(255, 255, 255); /* Cor da linha */
+      margin-top:20px;
+    }
+    #ctt1{
+        margin-top: 100px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #zap2{
+        margin-top: 30px;
+        margin-left: 650px;
+        height: 125px;
+    }
+    #number{
+        margin-top: -90px;
+        margin-left: 800px;
+    }
+    #insta {
+        margin-top: 100px;
+        margin-left: 650px;
+        height: 120px;
+    }
+    #arroba{
+        margin-top: -90px;
+        margin-left: 800px;
+    }
+    .foot{
+        height: 80px;
+        margin-top: 150px;
+        background-color: rgba(217, 217, 217, 1) ;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #ftext{
+        color: black;
+    }
+    @media(max-width: 600px) {
+        header {
+      background-color: rgba(217, 217, 217, 1);
+      padding: 5px 15px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #lg1 {
+      height: 50px; /* ajuste o tamanho conforme quiser */
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+      display: flex;
+      gap: 30px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    body {
+        background-color: rgba(156, 156, 156, 1);
+        overflow-x: hidden;
+    }
+    h1{
+        color:white;
+    }
+    #queb {
+        font-size: 25px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    #nmn{
+        font-size: 25px;
+        margin-top:40px;
+        margin-left: 20px;
+    }
+    #crash{
+        height: 125px;
+        margin-left: 260px;
+        margin-top: -1000px;
+    }
+    #aj{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    #qs1{
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 115px;
+    }
+    #lg2 {
+        height: 200px;
+        margin-top: 0px;
+        margin-left: 115px;
+    }
+    h2{
+        color: white;
+    }
+    #qs1txt{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    .ret1 {
+        width: 350px;     /* Largura */
+        height: 175px;    /* Altura */
+        background-color: rgba(71, 199, 86, 1);  /* Cor de fundo */
+        margin-top: 40px;
+        margin-left: 25px;
+        border-radius: 20px;
+    }
+    #zap{
+        margin-top: 30px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .msgform{
+        padding: 20px;
+        font-size: 20px;
+        margin-top: -110px;
+        margin-left: 100px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    #line1{
+
+        width: 300px;               /* Largura da linha */
+      height: 2px;            /* Altura da linha */
+      color: rgb(255, 255, 255); /* Cor da linha */
+      margin-top:20px;
+    }
+    #ctt1{
+        margin-top: 100px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #zap2{
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 100px;
+    }
+    #number{
+        font-size: 25px;
+        margin-top: -75px;
+        margin-left: 140px;
+    }
+    #insta {
+        margin-top: 60px;
+        margin-left: 20px;
+        height: 100px;
+    }
+    #arroba{
+        font-size: 25px;
+        margin-top: -75px;
+        margin-left: 140px;
+    }
+    .foot{
+        font-size: 7px;
+        height: 75px;
+        margin-top: 150px;
+        background-color: rgba(217, 217, 217, 1) ;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #ftext{
+        color: black;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.png" id="lg1" alt="Logo" />
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 id="queb">Seu carro quebrou?</h1>
+    <h1 id="nmn">No meio do nada?</h1>
+    <img src="crash.png" id="crash">
+    <h1 id="aj">Deixa que a gente ajuda você com isso!</h1>
+    <div class="ret1">
+        <img src="zap-removebg-preview.png" id="zap">
+        <div class="msgform">
+            <input type="text" id="mensagem" placeholder="Meu carro quebrou! E agora?">
+        <button onclick="enviarMensagem()">Enviar para WhatsApp</button>
+      
+        <script>
+          function enviarMensagem() {
+            const numero = "5584988332205"; // coloque o número com DDD e código do país (55 para Brasil)
+            const mensagem = document.getElementById("mensagem").value;
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, "_blank"); // abre em nova aba
+          }
+        </script>
+        </div>
+    </div>
+    <h1 id="qs1">Quem somos?</h1>
+    <img src="logo2.png" id="lg2">
+    <h2 id="qs1txt">Nós somos uma empresa <br>
+        especializada ao reboque de <br>
+        veículos em quaisquer condições. <br>
+        Nosso objetivo é oferecer preços <br>
+         condizentes e justos<br>
+        com a nossa qualidade de serviço<br>
+         e atendimento ao cliente.<br>
+         Esperamos que aprecie nosso serviço!</h2>
+        <div>
+            <h1 id="ctt1">Contato</h1>
+            <hr id="line1">
+            <img src="zap-removebg-preview.png" id="zap2">
+            <h1 id="number">+55 84 99142-9905</h1>
+            <img src="images-removebg-preview.png" id="insta">
+            <h1 id="arroba">@nkguincho</h1>
+        </div>
+  </main>
+  <footer>
+    <div class="foot">
+        <h1 id="ftext">Quer mais informações? Explore o menu superior</h1>
+    </div>
+  </footer>
+</body>
+</html>
