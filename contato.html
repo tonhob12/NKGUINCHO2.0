@@ -58,44 +58,26 @@
     h1{
         color:white;
     }
-    #queb {
-        margin-top: 100px;
-        margin-left: 100px;
-    }
-    #nmn{
-        margin-top:40px;
-        margin-left: 100px;
-    }
-    #crash{
-        height: 250px;
-        margin-left: 450px;
-        margin-top: -800px;
-    }
-    #aj{
-        margin-top: 0px;
-        margin-left: 100px;
-    }
-    #qs1{
-        margin-top: -600px;
-        margin-left: 1250px;
+    #ctt0{
+        margin-top: 50px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #lg2 {
-        height: 300px;
-        margin-top: 0px;
-        margin-left: 1230px;
+        height: 325px;
+        margin-top: -210px;
+        margin-left: 860px;
     }
     h2{
         color: white;
-    }
-    #qs1txt{
-        margin-left: 1200px;
     }
     .ret1 {
         width: 600px;     /* Largura */
         height: 300px;    /* Altura */
         background-color: rgba(71, 199, 86, 1);  /* Cor de fundo */
         margin-top: 50px;
-        margin-left:100px;
+        margin-left:160px;
         border-radius: 20px;
     }
     #zap{
@@ -152,6 +134,12 @@
     #ftext{
         color: black;
     }
+    #ctt2 {
+        margin-top: 100px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     @media(max-width: 600px) {
         header {
       background-color: rgba(217, 217, 217, 1);
@@ -203,49 +191,26 @@
     h1{
         color:white;
     }
-    #queb {
+    #ctt0{
         font-size: 25px;
-        margin-top: 100px;
-        margin-left: 20px;
-    }
-    #nmn{
-        font-size: 25px;
-        margin-top:40px;
-        margin-left: 20px;
-    }
-    #crash{
-        height: 125px;
-        margin-left: 260px;
-        margin-top: -1000px;
-    }
-    #aj{
-        font-size: 25px;
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-    #qs1{
-        font-size: 25px;
-        margin-top: 50px;
-        margin-left: 115px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #lg2 {
         height: 200px;
-        margin-top: 0px;
-        margin-left: 115px;
+        margin-top:80px;
+        margin-left: 88px;
     }
     h2{
         color: white;
-    }
-    #qs1txt{
-        font-size: 24px;
-        margin-left: 20px;
     }
     .ret1 {
         width: 350px;     /* Largura */
         height: 175px;    /* Altura */
         background-color: rgba(71, 199, 86, 1);  /* Cor de fundo */
         margin-top: 40px;
-        margin-left: 25px;
+        margin-left: 40px;
         border-radius: 20px;
     }
     #zap{
@@ -306,6 +271,11 @@
     #ftext{
         color: black;
     }
+    #ctt2 {
+        font-size: 20px;
+        margin-top: 250px;
+        margin-left: 23px;
+    }
 }
   </style>
 </head>
@@ -323,44 +293,41 @@
     </nav>
   </header>
   <main>
-    <h1 id="queb">Seu carro quebrou?</h1>
-    <h1 id="nmn">No meio do nada?</h1>
-    <img src="crash.png" id="crash">
-    <h1 id="aj">Deixa que a gente ajuda você com isso!</h1>
-    <div class="ret1">
-        <img src="zap-removebg-preview.png" id="zap">
-        <div class="msgform">
-            <input type="text" id="mensagem" placeholder="Meu carro quebrou! E agora?">
-        <button onclick="enviarMensagem()">Enviar para WhatsApp</button>
-      
-        <script>
-          function enviarMensagem() {
-            const numero = "5584988332205"; // coloque o número com DDD e código do país (55 para Brasil)
-            const mensagem = document.getElementById("mensagem").value;
-            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-            window.open(url, "_blank"); // abre em nova aba
-          }
-        </script>
+    <h1 id="ctt0">Contato</h1>
+    <div>
+        <div>
+            <div class="ret1">
+            <img src="zap-removebg-preview.png" id="zap">
+            <div class="msgform">
+                <input type="text" id="mensagem" placeholder="Meu carro quebrou! E agora?">
+            <button onclick="enviarMensagem()">Enviar para WhatsApp</button>
+          
+            <script>
+              function enviarMensagem() {
+                const numero = "5584988332205"; // coloque o número com DDD e código do país (55 para Brasil)
+                const mensagem = document.getElementById("mensagem").value;
+                const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+                window.open(url, "_blank"); // abre em nova aba
+              }
+            </script>
+            </div>
+        <div>
+        <img src="logo2.png" id="lg2">
         </div>
     </div>
-    <h1 id="qs1">Quem somos?</h1>
-    <img src="logo2.png" id="lg2">
-    <h2 id="qs1txt">Nós somos uma empresa <br>
-        especializada ao reboque de <br>
-        veículos em quaisquer condições. <br>
-        Nosso objetivo é oferecer preços <br>
-         condizentes e justos<br>
-        com a nossa qualidade de serviço<br>
-         e atendimento ao cliente.<br>
-         Esperamos que aprecie nosso serviço!</h2>
-        <div>
+    <h1 id="ctt2">Nós temos duas principais formas de contato, <br>o aplicativo WhatsApp e nossos números de telefone, <br>além do Instagram.
+        No botão acima, é possível escrever <br> uma mensagem, que ao clicar no botão, irá redirecioná-lo <br> ao nosso WhatsApp.
+        Ao lado, temos nossa principal logo, <br> com os principais números telefônicos.<br> Abaixo, há nosso WhatsApp e Instagram.</h1>
+    <div>
+    
             <h1 id="ctt1">Contato</h1>
             <hr id="line1">
             <img src="zap-removebg-preview.png" id="zap2">
             <h1 id="number">+55 84 98833-2205</h1>
             <img src="images-removebg-preview.png" id="insta">
             <h1 id="arroba">@nkguincho</h1>
-        </div>
+    </div>
+    </main>
   </main>
   <footer>
     <div class="foot">
