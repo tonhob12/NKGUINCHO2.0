@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="icon" href="logo.png" type="png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home</title>
@@ -56,13 +57,24 @@
         background-color: rgba(156, 156, 156, 1);
     }
     h1{
-        color:white;
+        color:black;
+    }
+    h2{
+      color:rgb(0, 0, 0);
     }
     #queb {
+      font-weight: bold;
+        color: #E53935;
+        animation: led-destacar 6s forwards;
+        animation-delay: 0s;
         margin-top: 100px;
         margin-left: 120px;
     }
     #nmn{
+      font-weight: bold;
+        color: #FDD835;
+        animation: led-destacar 6s forwards;
+        animation-delay: 2s;
         margin-top:40px;
         margin-left: 120px;
     }
@@ -72,9 +84,23 @@
         margin-top: -800px;
     }
     #aj{
+      font-weight: bold;
+        color:#00E676;
+        animation: led-destacar-verde 6s infinite;
+        animation-delay: 4s;
         margin-top: 0px;
         margin-left: 120px;
     }
+    @keyframes led-destacar {
+      0%, 100% { opacity: 0.5; text-shadow: none; }
+      20%, 40% { opacity: 1; text-shadow: 0 0 12px currentColor; }
+      41%, 99% { opacity: 0.5; text-shadow: none; }
+    }
+    @keyframes led-destacar-verde {
+           0%, 100% { opacity: 1; text-shadow: 0 0 12px currentColor; } /* Neon constante no verde */
+            20%, 40% { opacity: 1; text-shadow: 0 0 12px currentColor; }
+            41%, 99% { opacity: 1; text-shadow: 0 0 12px currentColor; } /* Neon constante no verde */
+        }
     #qs1{
         margin-top: -600px;
         margin-left: 1100px;
@@ -82,12 +108,13 @@
     #lg2 {
         height: 300px;
         margin-top: 0px;
-        margin-left: 1100px;
+        margin-left: 1080px;
     }
     h2{
         color: white;
     }
     #qs1txt{
+      color:black;
       margin-left: 1050px;
     }
     .ret1 {
@@ -201,7 +228,7 @@
         overflow-x: hidden;
     }
     h1{
-        color:white;
+        color:black;
     }
     #queb {
         font-size: 25px;
@@ -237,6 +264,7 @@
         color: white;
     }
     #qs1txt{
+        color:black;
         font-size: 24px;
         margin-left: 20px;
     }
@@ -345,7 +373,7 @@
     </div>
     <h1 id="qs1">Quem somos?</h1>
     <img src="logo2.png" id="lg2">
-    <h2 id="qs1txt">Nós somos uma empresa <br>
+    <h2 id="qs1txt"> Nós somos uma empresa <br>
         especializada ao reboque de <br>
         veículos em quaisquer condições. <br>
         Nosso objetivo é oferecer preços <br>
